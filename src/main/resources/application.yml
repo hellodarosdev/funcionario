@@ -1,1 +1,3 @@
-spring.application.name=funcionarios
+server:
+  servlet:
+    context-path: /funcionarios/api
