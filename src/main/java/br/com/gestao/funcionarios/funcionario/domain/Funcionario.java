@@ -1,5 +1,6 @@
 package br.com.gestao.funcionarios.funcionario.domain;
 
+import br.com.gestao.funcionarios.application.api.FuncionarioRequest;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -29,13 +30,12 @@ public class Funcionario {
     private Boolean aceitaTermos;
 
 
-    public Funcionario(Boolean aceitaTermos, String designacao, String endereco, String nome,
-                       BigDecimal salario, String telefone) {
-        this.aceitaTermos = aceitaTermos;
-        this.designacao = designacao;
-        this.endereco = endereco;
-        this.nome = nome;
-        this.salario = salario;
-        this.telefone = telefone;
+    public Funcionario(FuncionarioRequest funcionarioRequest){
+        this.aceitaTermos = funcionarioRequest.getAceitaTermos();
+        this.designacao = funcionarioRequest.getDesignacao();
+        this.endereco = funcionarioRequest.getEndereco();
+        this.nome = funcionarioRequest.getNome();
+        this.salario = funcionarioRequest.getSalario();
+        this.telefone = funcionarioRequest.getTelefone();
     }
 }

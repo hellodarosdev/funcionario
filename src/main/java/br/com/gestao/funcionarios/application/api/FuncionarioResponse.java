@@ -1,10 +1,11 @@
 package br.com.gestao.funcionarios.application.api;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
+import lombok.Builder;
+import lombok.Value;
 
-import java.math.BigDecimal;
 import java.util.UUID;
 
+@Value
+@Builder
 public class FuncionarioResponse {
     private UUID id;
 
