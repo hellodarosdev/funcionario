@@ -19,9 +19,7 @@ public class Funcionario {
     private UUID id;
     @NotBlank
     private String nome;
-    @NotBlank
     private String designacao;
-    @NotBlank
     private BigDecimal salario;
     @NotBlank
     private String telefone;

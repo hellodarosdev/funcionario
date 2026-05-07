@@ -7,12 +7,9 @@ import java.util.UUID;
 
 @Value
 public class FuncionarioRequest {
-    private UUID id;
     @NotBlank
     private String nome;
-    @NotBlank
     private String designacao;
-    @NotBlank
     private BigDecimal salario;
     @NotBlank
     private String telefone;
