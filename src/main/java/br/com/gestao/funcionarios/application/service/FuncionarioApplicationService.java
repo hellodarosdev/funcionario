@@ -1,4 +1,5 @@
 package br.com.gestao.funcionarios.application.service;
+import br.com.gestao.funcionarios.application.api.FuncionarioListResponse;
 import br.com.gestao.funcionarios.application.api.FuncionarioRequest;
 import br.com.gestao.funcionarios.application.api.FuncionarioResponse;
 import br.com.gestao.funcionarios.application.repository.FuncionarioRepository;
@@ -6,6 +7,8 @@ import br.com.gestao.funcionarios.domain.Funcionario;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 @Log4j2
@@ -21,5 +24,12 @@ public class FuncionarioApplicationService implements FuncionarioService{
         return FuncionarioResponse.builder()
                 .id(funcionario.getId())
                 .build();
+    }
+
+    @Override
+    public List<FuncionarioListResponse> buscaTodosFuncionarios() {
+        log.info("[inicia] FuncionarioApplicationService - buscaTodosFuncionarios ");
+        log.info("[finaliza] FuncionarioApplicationService - buscaTodosFuncionarios ");
+        return null;
     }
 }
