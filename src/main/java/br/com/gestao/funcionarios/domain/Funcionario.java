@@ -1,4 +1,4 @@
-package br.com.gestao.funcionarios.funcionario.domain;
+package br.com.gestao.funcionarios.domain;
 
 import br.com.gestao.funcionarios.application.api.FuncionarioRequest;
 import jakarta.persistence.*;
