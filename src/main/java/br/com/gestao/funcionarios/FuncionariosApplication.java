@@ -18,5 +18,4 @@ public class FuncionariosApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(FuncionariosApplication.class, args);
 	}
-
 }
