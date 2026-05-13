@@ -13,10 +13,10 @@ public interface FuncionarioAPI {
     FuncionarioResponse postFuncionario(@Valid @RequestBody FuncionarioRequest funcionarioRequest);
 
     @GetMapping
-    @ResponseStatus(code = HttpStatus.CREATED)
+    @ResponseStatus(code = HttpStatus.OK)
     List<FuncionarioListResponse> getTodosFuncionarios();
 
     @GetMapping (value = "/{idFuncionario}")
-    @ResponseStatus(code = HttpStatus.CREATED)
+    @ResponseStatus(code = HttpStatus.OK)
     FuncionarioDetalhadoResponse getFuncionarioAtravesId(@PathVariable UUID idFuncionario);
 }

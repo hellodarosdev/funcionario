@@ -16,10 +16,11 @@ import java.util.UUID;
 public class Funcionario {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", updatable = false, unique = true, nullable = false)
+    @Column(columnDefinition = "uuid", name = "idFuncionario", updatable = false, unique = true, nullable = false)
     private UUID id;
     @NotBlank
     private String nome;
+    @NotBlank
     private String designacao;
     private BigDecimal salario;
     @NotBlank
