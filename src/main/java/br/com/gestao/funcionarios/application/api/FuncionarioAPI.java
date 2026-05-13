@@ -19,4 +19,14 @@ public interface FuncionarioAPI {
     @GetMapping (value = "/{idFuncionario}")
     @ResponseStatus(code = HttpStatus.OK)
     FuncionarioDetalhadoResponse getFuncionarioAtravesId(@PathVariable UUID idFuncionario);
+
+    @DeleteMapping(value = "/{idFuncionario}")
+    @ResponseStatus(code = HttpStatus.NO_CONTENT)
+    void deletaFuncionarioAtravesId(@PathVariable UUID idFuncionario);
+
+   /* @PatchMapping(value = "/{idFuncionario}")
+    @ResponseStatus(code = HttpStatus.NO_CONTENT)
+    void patchAlteraFuncionario(@PathVariable UUID idFuncionario,
+                            @Valid @RequestBody FuncionarioAlteracaoRequest FuncionarioAlteracaoRequest);*/
+
 }

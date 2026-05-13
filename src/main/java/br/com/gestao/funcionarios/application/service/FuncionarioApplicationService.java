@@ -42,4 +42,14 @@ public class FuncionarioApplicationService implements FuncionarioService{
         log.info("[finaliza] FuncionarioApplicationService - buscaFuncionarioAtravesId ");
         return new FuncionarioDetalhadoResponse(funcionario);
     }
+
+    @Override
+    public void deletaFuncionarioAtravesId(UUID idFuncionario) {
+        log.info("[inicia] FuncionarioApplicationService - deletaFuncionarioAtravesId ");
+        Funcionario funcionario = funcionarioRepository.buscaFuncionarioAtravesId(idFuncionario);
+        funcionarioRepository.deletaFuncionario(funcionario);
+        log.info("[finaliza] FuncionarioApplicationService - deletaFuncionarioAtravesId ");
+
+
+    }
 }
