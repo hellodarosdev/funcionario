@@ -24,6 +24,7 @@ public class Funcionario {
     private String designacao;
     private BigDecimal salario;
     @NotBlank
+    @Column(unique = true)
     private String telefone;
     @NotBlank
     private String endereco;
