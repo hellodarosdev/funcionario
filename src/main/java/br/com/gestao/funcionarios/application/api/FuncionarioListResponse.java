@@ -1,4 +1,7 @@
 package br.com.gestao.funcionarios.application.api;
+import br.com.gestao.funcionarios.domain.Funcionario;
+
+import java.util.List;
 import java.util.UUID;
 
 public class FuncionarioListResponse {
@@ -7,4 +10,7 @@ public class FuncionarioListResponse {
     private String designacao;
     private String telefone;
 
+    public static List<FuncionarioListResponse> converte(List<Funcionario> funcionarios) {
+        return null;
+    }
 }
