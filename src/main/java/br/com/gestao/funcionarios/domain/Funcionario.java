@@ -1,5 +1,5 @@
 package br.com.gestao.funcionarios.domain;
-
+import br.com.gestao.funcionarios.application.api.FuncionarioAlteracaoRequest;
 import br.com.gestao.funcionarios.application.api.FuncionarioRequest;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
@@ -33,6 +33,15 @@ public class Funcionario {
 
 
     public Funcionario(FuncionarioRequest funcionarioRequest){
+        this.aceitaTermos = funcionarioRequest.getAceitaTermos();
+        this.designacao = funcionarioRequest.getDesignacao();
+        this.endereco = funcionarioRequest.getEndereco();
+        this.nome = funcionarioRequest.getNome();
+        this.salario = funcionarioRequest.getSalario();
+        this.telefone = funcionarioRequest.getTelefone();
+    }
+
+    public void altera(FuncionarioAlteracaoRequest funcionarioRequest) {
         this.aceitaTermos = funcionarioRequest.getAceitaTermos();
         this.designacao = funcionarioRequest.getDesignacao();
         this.endereco = funcionarioRequest.getEndereco();

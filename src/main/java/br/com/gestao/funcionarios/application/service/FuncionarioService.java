@@ -1,10 +1,5 @@
 package br.com.gestao.funcionarios.application.service;
-
-import br.com.gestao.funcionarios.application.api.FuncionarioDetalhadoResponse;
-import br.com.gestao.funcionarios.application.api.FuncionarioListResponse;
-import br.com.gestao.funcionarios.application.api.FuncionarioRequest;
-import br.com.gestao.funcionarios.application.api.FuncionarioResponse;
-
+import br.com.gestao.funcionarios.application.api.*;
 import java.util.List;
 import java.util.UUID;
 
@@ -17,4 +12,6 @@ public interface FuncionarioService {
     FuncionarioDetalhadoResponse buscaFuncionarioAtravesId(UUID idFuncionario);
 
     void deletaFuncionarioAtravesId(UUID idFuncionario);
+
+    void patchAlteraFuncionario(UUID idFuncionario, FuncionarioAlteracaoRequest funcionarioAlteracaoRequest);
 }

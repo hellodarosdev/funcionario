@@ -1,5 +1,4 @@
 package br.com.gestao.funcionarios;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,5 +16,5 @@ public class FuncionariosApplication {
     }
 	public static void main(String[] args) {
 		SpringApplication.run(FuncionariosApplication.class, args);
-	}
+ 	}
 }
