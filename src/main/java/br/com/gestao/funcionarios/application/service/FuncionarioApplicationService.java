@@ -1,10 +1,12 @@
 package br.com.gestao.funcionarios.application.service;
+
 import br.com.gestao.funcionarios.application.api.*;
 import br.com.gestao.funcionarios.application.repository.FuncionarioRepository;
 import br.com.gestao.funcionarios.domain.Funcionario;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 import java.util.UUID;
 

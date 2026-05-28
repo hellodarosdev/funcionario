@@ -1,9 +1,11 @@
 package br.com.gestao.funcionarios.application.api;
+
 import br.com.gestao.funcionarios.application.service.FuncionarioService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.web.bind.annotation.RestController;
+
 import java.util.List;
 import java.util.UUID;
 
@@ -56,6 +58,5 @@ public class FuncionarioController implements FuncionarioAPI {
         funcionarioService.patchAlteraFuncionario(idFuncionario, funcionarioAlteracaoRequest);
         log.info("[finaliza] FuncionarioController - patchAlteraFuncionario");
     }
-
 
 }

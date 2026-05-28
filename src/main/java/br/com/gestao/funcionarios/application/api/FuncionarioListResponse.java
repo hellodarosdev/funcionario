@@ -1,6 +1,8 @@
 package br.com.gestao.funcionarios.application.api;
+
 import br.com.gestao.funcionarios.domain.Funcionario;
 import lombok.Value;
+
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;

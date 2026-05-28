@@ -1,4 +1,5 @@
 package br.com.gestao.funcionarios.infra;
+
 import br.com.gestao.funcionarios.application.repository.FuncionarioRepository;
 import br.com.gestao.funcionarios.domain.Funcionario;
 import br.com.gestao.funcionarios.handler.APIException;
@@ -7,6 +8,7 @@ import lombok.extern.log4j.Log4j2;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Repository;
+
 import java.util.List;
 import java.util.UUID;
 

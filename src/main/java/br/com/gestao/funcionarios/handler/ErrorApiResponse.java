@@ -1,4 +1,5 @@
 package br.com.gestao.funcionarios.handler;
+
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;

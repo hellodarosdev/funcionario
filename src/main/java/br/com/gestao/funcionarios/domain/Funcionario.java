@@ -1,4 +1,5 @@
 package br.com.gestao.funcionarios.domain;
+
 import br.com.gestao.funcionarios.application.api.FuncionarioAlteracaoRequest;
 import br.com.gestao.funcionarios.application.api.FuncionarioRequest;
 import jakarta.persistence.*;
@@ -7,6 +8,7 @@ import jakarta.validation.constraints.NotNull;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+
 import java.math.BigDecimal;
 import java.util.UUID;
 
