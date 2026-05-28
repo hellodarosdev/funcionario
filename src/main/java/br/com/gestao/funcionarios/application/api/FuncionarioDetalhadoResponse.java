@@ -1,10 +1,12 @@
 package br.com.gestao.funcionarios.application.api;
 
 import br.com.gestao.funcionarios.domain.Funcionario;
+import lombok.Getter;
 
 import java.math.BigDecimal;
 import java.util.UUID;
 
+@Getter
 public class FuncionarioDetalhadoResponse {
     private UUID id;
     private String nome;

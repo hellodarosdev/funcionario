@@ -10,6 +10,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+import java.util.Objects;
 import java.util.UUID;
 
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
@@ -51,4 +52,14 @@ public class Funcionario {
         this.salario = funcionarioRequest.getSalario();
         this.telefone = funcionarioRequest.getTelefone();
     }
+
+    public boolean possuiMesmosDados(FuncionarioAlteracaoRequest request) {
+        return Objects.equals(this.nome, request.getNome())
+                && Objects.equals(this.designacao, request.getDesignacao())
+                && this.salario.compareTo(request.getSalario()) == 0
+                && Objects.equals(this.telefone, request.getTelefone())
+                && Objects.equals(this.endereco, request.getEndereco())
+                && Objects.equals(this.aceitaTermos, request.getAceitaTermos());
+    }
+
 }
